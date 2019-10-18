@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.2.6.1\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.2.6.1\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DBEFCAF2-0499-473A-8F1C-145AAEC6FFA8}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MyAudit_KA</RootNamespace>
+    <AssemblyName>MyAudit_KA</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bootstrap-4.3.1-dist\css\bootstrap-grid.css" />
+    <Content Include="bootstrap-4.3.1-dist\css\bootstrap-grid.css.map" />
+    <Content Include="bootstrap-4.3.1-dist\css\bootstrap-grid.min.css" />
+    <Content Include="bootstrap-4.3.1-dist\css\bootstrap-grid.min.css.map" />
+    <Content Include="bootstrap-4.3.1-dist\css\bootstrap-reboot.css" />
+    <Content Include="bootstrap-4.3.1-dist\css\bootstrap-reboot.css.map" />
+    <Content Include="bootstrap-4.3.1-dist\css\bootstrap-reboot.min.css" />
+    <Content Include="bootstrap-4.3.1-dist\css\bootstrap-reboot.min.css.map" />
+    <Content Include="bootstrap-4.3.1-dist\css\bootstrap.css" />
+    <Content Include="bootstrap-4.3.1-dist\css\bootstrap.css.map" />
+    <Content Include="bootstrap-4.3.1-dist\css\bootstrap.min.css" />
+    <Content Include="bootstrap-4.3.1-dist\css\bootstrap.min.css.map" />
+    <Content Include="bootstrap-4.3.1-dist\js\bootstrap.bundle.js" />
+    <Content Include="bootstrap-4.3.1-dist\js\bootstrap.bundle.js.map" />
+    <Content Include="bootstrap-4.3.1-dist\js\bootstrap.bundle.min.js" />
+    <Content Include="bootstrap-4.3.1-dist\js\bootstrap.bundle.min.js.map" />
+    <Content Include="bootstrap-4.3.1-dist\js\bootstrap.js" />
+    <Content Include="bootstrap-4.3.1-dist\js\bootstrap.js.map" />
+    <Content Include="bootstrap-4.3.1-dist\js\bootstrap.min.js" />
+    <Content Include="bootstrap-4.3.1-dist\js\bootstrap.min.js.map" />
+    <Content Include="CustomStyle\Customstyle.css" />
+    <Content Include="CustomStyle\style5.css" />
+    <Content Include="Dashboard\AdminDashboard.aspx" />
+    <Content Include="Dashboard\Dashboard.aspx" />
+    <Content Include="images\loading.gif" />
+    <Content Include="JavaScript\bootstrap.min.js" />
+    <Content Include="JavaScript\fontawesome.js" />
+    <Content Include="JavaScript\jquery-3.3.1.slim.min.js" />
+    <Content Include="JavaScript\popper.min.js" />
+    <Content Include="JavaScript\solid.js" />
+    <Content Include="Login.aspx" />
+    <Content Include="MasterDetails\CompanyDetails.aspx" />
+    <Content Include="MasterDetails\CompanyDtl.aspx" />
+    <Content Include="Masters\CompanyDetails.aspx" />
+    <Content Include="Masters\CompanyDetails_Tab2.aspx" />
+    <Content Include="Masters\CompanyDetails_Tab3.aspx" />
+    <Content Include="Masters\CompanyDetails_Tab4.aspx" />
+    <Content Include="Masters\CompanyDetails_Tab5.aspx" />
+    <Content Include="Masters\CompanyDetails_Tab6.aspx" />
+    <Content Include="Masters\CompanyDetails_Tab7.aspx" />
+    <Content Include="Masters\CompanyMaster.aspx" />
+    <Content Include="Masters\WebForm1.aspx" />
+    <Content Include="testpage.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\AuditSession.cs" />
+    <Compile Include="Classes\ValidateSession.cs" />
+    <Compile Include="Dashboard\AdminDashboard.aspx.cs">
+      <DependentUpon>AdminDashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\AdminDashboard.aspx.designer.cs">
+      <DependentUpon>AdminDashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\Dashboard.aspx.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Dashboard.aspx.designer.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master Pages\Main.Master.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master Pages\Main.Master.designer.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterDetails\CompanyDetails.aspx.cs">
+      <DependentUpon>CompanyDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterDetails\CompanyDetails.aspx.designer.cs">
+      <DependentUpon>CompanyDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterDetails\CompanyDtl.aspx.cs">
+      <DependentUpon>CompanyDtl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterDetails\CompanyDtl.aspx.designer.cs">
+      <DependentUpon>CompanyDtl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\CompanyDetails.aspx.cs">
+      <DependentUpon>CompanyDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Masters\CompanyDetails.aspx.designer.cs">
+      <DependentUpon>CompanyDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\CompanyDetails_Tab2.aspx.cs">
+      <DependentUpon>CompanyDetails_Tab2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Masters\CompanyDetails_Tab2.aspx.designer.cs">
+      <DependentUpon>CompanyDetails_Tab2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\CompanyDetails_Tab3.aspx.cs">
+      <DependentUpon>CompanyDetails_Tab3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Masters\CompanyDetails_Tab3.aspx.designer.cs">
+      <DependentUpon>CompanyDetails_Tab3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\CompanyDetails_Tab4.aspx.cs">
+      <DependentUpon>CompanyDetails_Tab4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Masters\CompanyDetails_Tab4.aspx.designer.cs">
+      <DependentUpon>CompanyDetails_Tab4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\CompanyDetails_Tab5.aspx.cs">
+      <DependentUpon>CompanyDetails_Tab5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Masters\CompanyDetails_Tab5.aspx.designer.cs">
+      <DependentUpon>CompanyDetails_Tab5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\CompanyDetails_Tab6.aspx.cs">
+      <DependentUpon>CompanyDetails_Tab6.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Masters\CompanyDetails_Tab6.aspx.designer.cs">
+      <DependentUpon>CompanyDetails_Tab6.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\CompanyDetails_Tab7.aspx.cs">
+      <DependentUpon>CompanyDetails_Tab7.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Masters\CompanyDetails_Tab7.aspx.designer.cs">
+      <DependentUpon>CompanyDetails_Tab7.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\CompanyMaster.aspx.cs">
+      <DependentUpon>CompanyMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Masters\CompanyMaster.aspx.designer.cs">
+      <DependentUpon>CompanyMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Masters\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="testpage.aspx.cs">
+      <DependentUpon>testpage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="testpage.aspx.designer.cs">
+      <DependentUpon>testpage.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Master Pages\Main.Master" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BAL_Audit\BAL_Audit.csproj">
+      <Project>{465c7459-c207-4e41-88d3-028eaf26b9e8}</Project>
+      <Name>BAL_Audit</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MDL_Audit\MDL_Audit.csproj">
+      <Project>{933994df-7893-4759-9fdf-03e1e461a993}</Project>
+      <Name>MDL_Audit</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>58535</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:58535/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.2.6.1\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.2.6.1\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
