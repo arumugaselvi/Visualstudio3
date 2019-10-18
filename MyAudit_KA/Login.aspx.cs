@@ -16,6 +16,8 @@ namespace MyAudit
         {
             if (!IsPostBack)
             {
+                var loginSession = new AuditSession();
+
             }
         }
         protected void btn_login_click(object sender, EventArgs e)
