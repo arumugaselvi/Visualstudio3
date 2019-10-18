@@ -17,6 +17,7 @@ namespace MyAudit
             if (!IsPostBack)
             {
                 var loginSession = new AuditSession();
+                var userDetails = new loginMDL();
 
             }
         }
